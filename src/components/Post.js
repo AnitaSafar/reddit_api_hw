@@ -1,12 +1,8 @@
 import React from "react";
 
-const Post = () => {
-    return(
-        <>
-        <p>Post</p>
-        <p>Post</p>
-        </>
-    )
+const Post = ({post}) => {
+
+    return <li>{post.data.title}</li>
 };
 
 export default Post;
