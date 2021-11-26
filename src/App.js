@@ -1,8 +1,9 @@
 import './App.css';
+import PostsContainer from './containers/PostsContainer';
 
 function App() {
   return (
-    <h1>Reddit Newsfeed</h1>
+    <PostsContainer/>
   );
 }
 
