@@ -2,7 +2,14 @@ import React from "react";
 
 const Post = ({post}) => {
 
-    return <li>{post.data.title}</li>
+    return(
+        <li>
+            <p>
+                <a href={post.data.url}>{post.data.title}</a>
+            </p>
+            <p>Author: {post.data.author}</p>
+        </li>
+    )
 };
 
 export default Post;
