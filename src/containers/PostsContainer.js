@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Favourite from "../components/Favourite";
+import PostForm from "../components/PostForm";
 import PostList from "../components/PostList";
 
 const PostsContainer = () => {
@@ -13,10 +15,15 @@ const PostsContainer = () => {
         .then(posts => setPosts(posts.data.children));
     };
 
+
+
+
     return(
         <>
         <h1>Reddit Newsfeed</h1>
         <PostList posts={posts}/>
+        <PostForm/>
+        <Favourite/>
         </>
     );
 };
